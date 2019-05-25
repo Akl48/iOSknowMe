@@ -14,6 +14,8 @@
 		65F484EC2297DEDE00145DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F484EA2297DEDE00145DE2 /* LaunchScreen.storyboard */; };
 		65F484EF2297DEDE00145DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484EE2297DEDE00145DE2 /* main.m */; };
 		65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484FC2297E32B00145DE2 /* ZTRViewController.m */; };
+		92B2CD5E229974740049CECF /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 92B2CD5D229974740049CECF /* story.json */; };
+		92B2CD61229977880049CECF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD60229977880049CECF /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		65F484EE2297DEDE00145DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65F484FB2297E32B00145DE2 /* ZTRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTRViewController.h; sourceTree = "<group>"; };
 		65F484FC2297E32B00145DE2 /* ZTRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTRViewController.m; sourceTree = "<group>"; };
+		92B2CD5D229974740049CECF /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
+		92B2CD5F229977880049CECF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		92B2CD60229977880049CECF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		92B2CD6222997CD20049CECF /* restrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = restrain.h; sourceTree = "<group>"; };
 		9FFD2E62157D339416B2ECF4 /* libPods-知己.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-知己.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +56,6 @@
 				4EABF221F9E9BABCD1D45790 /* Pods-知己.debug.xcconfig */,
 				40A13CE6950B0E688D986E41 /* Pods-知己.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,6 +76,9 @@
 		65778F3F2297F77A004AAB32 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				92B2CD6222997CD20049CECF /* restrain.h */,
+				92B2CD5F229977880049CECF /* MainViewController.h */,
+				92B2CD60229977880049CECF /* MainViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -110,7 +118,8 @@
 		65F484DE2297DEDC00145DE2 /* 知己 */ = {
 			isa = PBXGroup;
 			children = (
-				65F484F72297E1D000145DE2 /* root */,
+				92B2CD5A22996CCF0049CECF /* Model */,
+				65F484F72297E1D000145DE2 /* Root */,
 				65F484F52297DEF000145DE2 /* AppDelegate */,
 				65F484F62297DF2600145DE2 /* Other */,
 				65F484E82297DEDE00145DE2 /* Assets.xcassets */,
@@ -138,7 +147,7 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		65F484F72297E1D000145DE2 /* root */ = {
+		65F484F72297E1D000145DE2 /* Root */ = {
 			isa = PBXGroup;
 			children = (
 				65778F412297F7A5004AAB32 /* AI */,
@@ -150,7 +159,7 @@
 				65F484FB2297E32B00145DE2 /* ZTRViewController.h */,
 				65F484FC2297E32B00145DE2 /* ZTRViewController.m */,
 			);
-			path = root;
+			path = Root;
 			sourceTree = "<group>";
 		};
 		65F484FE2297E47F00145DE2 /* AD */ = {
@@ -158,6 +167,14 @@
 			children = (
 			);
 			path = AD;
+			sourceTree = "<group>";
+		};
+		92B2CD5A22996CCF0049CECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B2CD5D229974740049CECF /* story.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B44AC555B97A9D3CA1C31645 /* Frameworks */ = {
@@ -229,6 +246,7 @@
 				65D478EF2297E87600020061 /* adView.png in Resources */,
 				65F484EC2297DEDE00145DE2 /* LaunchScreen.storyboard in Resources */,
 				65F484E92297DEDE00145DE2 /* Assets.xcassets in Resources */,
+				92B2CD5E229974740049CECF /* story.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +285,7 @@
 				65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */,
 				65F484EF2297DEDE00145DE2 /* main.m in Sources */,
 				65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */,
+				92B2CD61229977880049CECF /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
