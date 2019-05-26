@@ -16,6 +16,8 @@
 		65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484FC2297E32B00145DE2 /* ZTRViewController.m */; };
 		92B2CD5E229974740049CECF /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 92B2CD5D229974740049CECF /* story.json */; };
 		92B2CD61229977880049CECF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD60229977880049CECF /* MainViewController.m */; };
+		92B2CD65229A2E620049CECF /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD64229A2E620049CECF /* MineViewController.m */; };
+		92B2CD68229A2F350049CECF /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD67229A2F350049CECF /* AIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		92B2CD5F229977880049CECF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		92B2CD60229977880049CECF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		92B2CD6222997CD20049CECF /* restrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = restrain.h; sourceTree = "<group>"; };
+		92B2CD63229A2E620049CECF /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		92B2CD64229A2E620049CECF /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		92B2CD66229A2F350049CECF /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
+		92B2CD67229A2F350049CECF /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
 		9FFD2E62157D339416B2ECF4 /* libPods-知己.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-知己.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -62,6 +68,8 @@
 		65778F3D2297F75F004AAB32 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				92B2CD63229A2E620049CECF /* MineViewController.h */,
+				92B2CD64229A2E620049CECF /* MineViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -93,6 +101,8 @@
 		65778F412297F7A5004AAB32 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				92B2CD66229A2F350049CECF /* AIViewController.h */,
+				92B2CD67229A2F350049CECF /* AIViewController.m */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -284,7 +294,9 @@
 			files = (
 				65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */,
 				65F484EF2297DEDE00145DE2 /* main.m in Sources */,
+				92B2CD65229A2E620049CECF /* MineViewController.m in Sources */,
 				65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */,
+				92B2CD68229A2F350049CECF /* AIViewController.m in Sources */,
 				92B2CD61229977880049CECF /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LBLB6U5266;
+				DEVELOPMENT_TEAM = 5FXX6G3M6W;
 				INFOPLIST_FILE = "知己/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,7 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.1057075812.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -439,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LBLB6U5266;
+				DEVELOPMENT_TEAM = 5FXX6G3M6W;
 				INFOPLIST_FILE = "知己/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.1057075812.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
