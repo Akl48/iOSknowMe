@@ -18,6 +18,8 @@
 		92B2CD61229977880049CECF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD60229977880049CECF /* MainViewController.m */; };
 		92B2CD65229A2E620049CECF /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD64229A2E620049CECF /* MineViewController.m */; };
 		92B2CD68229A2F350049CECF /* AIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD67229A2F350049CECF /* AIViewController.m */; };
+		92B2CD6E229A8E6A0049CECF /* todayStoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD6D229A8E6A0049CECF /* todayStoryView.m */; };
+		92B2CD71229A8E800049CECF /* formerStoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2CD70229A8E800049CECF /* formerStoryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,10 @@
 		92B2CD64229A2E620049CECF /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		92B2CD66229A2F350049CECF /* AIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewController.h; sourceTree = "<group>"; };
 		92B2CD67229A2F350049CECF /* AIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIViewController.m; sourceTree = "<group>"; };
+		92B2CD6C229A8E6A0049CECF /* todayStoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = todayStoryView.h; sourceTree = "<group>"; };
+		92B2CD6D229A8E6A0049CECF /* todayStoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = todayStoryView.m; sourceTree = "<group>"; };
+		92B2CD6F229A8E800049CECF /* formerStoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = formerStoryView.h; sourceTree = "<group>"; };
+		92B2CD70229A8E800049CECF /* formerStoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = formerStoryView.m; sourceTree = "<group>"; };
 		9FFD2E62157D339416B2ECF4 /* libPods-知己.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-知己.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,10 @@
 				92B2CD6222997CD20049CECF /* restrain.h */,
 				92B2CD5F229977880049CECF /* MainViewController.h */,
 				92B2CD60229977880049CECF /* MainViewController.m */,
+				92B2CD6C229A8E6A0049CECF /* todayStoryView.h */,
+				92B2CD6D229A8E6A0049CECF /* todayStoryView.m */,
+				92B2CD6F229A8E800049CECF /* formerStoryView.h */,
+				92B2CD70229A8E800049CECF /* formerStoryView.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 			files = (
 				65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */,
 				65F484EF2297DEDE00145DE2 /* main.m in Sources */,
+				92B2CD6E229A8E6A0049CECF /* todayStoryView.m in Sources */,
+				92B2CD71229A8E800049CECF /* formerStoryView.m in Sources */,
 				92B2CD65229A2E620049CECF /* MineViewController.m in Sources */,
 				65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */,
 				92B2CD68229A2F350049CECF /* AIViewController.m in Sources */,
