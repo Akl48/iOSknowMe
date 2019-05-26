@@ -28,7 +28,7 @@
     self.duration = 3;
     [self.advertisementImageView addSubview:self.skipButton];
     [self.skipButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(80);
+        make.top.mas_equalTo(50);
         make.right.equalTo(self.advertisementImageView).offset(-30);
         make.width.mas_equalTo(80);
         make.height.mas_equalTo(40);
