@@ -11,6 +11,7 @@
 		655616EE229ABC6E008AED33 /* ZTRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616ED229ABC6E008AED33 /* ZTRTabBar.m */; };
 		655616F1229AC0CC008AED33 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F0229AC0CC008AED33 /* ARViewController.m */; };
 		655616F7229AC10D008AED33 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F6229AC10D008AED33 /* CardViewController.m */; };
+		655616FB229ACE61008AED33 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616FA229ACE61008AED33 /* ADViewController.m */; };
 		65D478EF2297E87600020061 /* adView.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D478EE2297E87600020061 /* adView.png */; };
 		65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484E02297DEDC00145DE2 /* AppDelegate.m */; };
 		65F484E92297DEDE00145DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F484E82297DEDE00145DE2 /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 		655616F0229AC0CC008AED33 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARViewController.m; path = "知己/Root/TabBar/ARViewController.m"; sourceTree = SOURCE_ROOT; };
 		655616F5229AC10D008AED33 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = "知己/Root/TabBar/CardViewController.h"; sourceTree = SOURCE_ROOT; };
 		655616F6229AC10D008AED33 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = "知己/Root/TabBar/CardViewController.m"; sourceTree = SOURCE_ROOT; };
+		655616F9229ACE61008AED33 /* ADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
+		655616FA229ACE61008AED33 /* ADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
 		65D478EE2297E87600020061 /* adView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adView.png; sourceTree = "<group>"; };
 		65F484DC2297DEDC00145DE2 /* 知己.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "知己.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F484DF2297DEDC00145DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -194,10 +197,10 @@
 			children = (
 				655616EB229ABC36008AED33 /* TabBar */,
 				65778F412297F7A5004AAB32 /* AI */,
-				65778F402297F791004AAB32 /* Card */,
 				65778F3F2297F77A004AAB32 /* Main */,
-				65778F3E2297F76E004AAB32 /* AR */,
 				65778F3D2297F75F004AAB32 /* Me */,
+				65778F402297F791004AAB32 /* Card */,
+				65778F3E2297F76E004AAB32 /* AR */,
 				65F484FE2297E47F00145DE2 /* AD */,
 				65F484FB2297E32B00145DE2 /* ZTRViewController.h */,
 				65F484FC2297E32B00145DE2 /* ZTRViewController.m */,
@@ -208,6 +211,8 @@
 		65F484FE2297E47F00145DE2 /* AD */ = {
 			isa = PBXGroup;
 			children = (
+				655616F9229ACE61008AED33 /* ADViewController.h */,
+				655616FA229ACE61008AED33 /* ADViewController.m */,
 			);
 			path = AD;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */,
+				655616FB229ACE61008AED33 /* ADViewController.m in Sources */,
 				65F484EF2297DEDE00145DE2 /* main.m in Sources */,
 				92B2CD6E229A8E6A0049CECF /* todayStoryView.m in Sources */,
 				92B2CD71229A8E800049CECF /* formerStoryView.m in Sources */,

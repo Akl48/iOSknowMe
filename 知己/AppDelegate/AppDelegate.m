@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZTRViewController.h"
+#import "ADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,11 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     ZTRViewController *tabBarController = [[ZTRViewController alloc]init];
-    self.window.rootViewController = tabBarController;
+    ADViewController *ad = [[ADViewController alloc]init];
+    self.window.rootViewController = ad;
+    ad.skipButtonClickBlock = ^{
+        self.window.rootViewController = tabBarController;
+    };
     [self.window makeKeyAndVisible];
     
     return YES;
