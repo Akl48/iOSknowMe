@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.duration = 3;
+    self.duration = 5;
     [self.advertisementImageView addSubview:self.skipButton];
     [self.skipButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(50);
@@ -34,14 +34,14 @@
         make.height.mas_equalTo(40);
     }];
 }
-
+#pragma mark -lazyloading
 - (UIImageView *)advertisementImageView {
     if (_advertisementImageView == nil) {
         _advertisementImageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
         [self.view addSubview:_advertisementImageView];
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"adView" ofType:@"png"];
         [_advertisementImageView setImage:[UIImage imageWithContentsOfFile:filePath]];
-        _advertisementImageView.userInteractionEnabled = NO;
+        _advertisementImageView.userInteractionEnabled = YES;
     }
     return _advertisementImageView;
 }
@@ -65,12 +65,13 @@
     return _skipButton;
 }
 
+#pragma mark -点击跳过
 - (void)countButtonClick {
     if (self.skipButtonClickBlock) {
         self.skipButtonClickBlock();
     }
 }
-
+#pragma mark -计时
 - (void)countTime {
     self.duration --;
     [self.skipButton setTitle:[NSString stringWithFormat:@"%zds跳过",self.duration] forState:UIControlStateNormal];
@@ -83,7 +84,7 @@
         return;
     }
 }
-///销毁定时器
+#pragma mark销毁定时器
 - (void)invalidatedTimer {
     [_timer invalidate];
     _timer = nil;

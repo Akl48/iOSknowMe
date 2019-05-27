@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CardViewController : UIViewController
+@interface CardViewController : UITableViewController
 
 @end
 

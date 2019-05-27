@@ -12,6 +12,21 @@
 		655616F1229AC0CC008AED33 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F0229AC0CC008AED33 /* ARViewController.m */; };
 		655616F7229AC10D008AED33 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F6229AC10D008AED33 /* CardViewController.m */; };
 		655616FB229ACE61008AED33 /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616FA229ACE61008AED33 /* ADViewController.m */; };
+		65561700229C0792008AED33 /* NewsCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616FF229C0792008AED33 /* NewsCard.m */; };
+		65561704229C096A008AED33 /* ZTRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65561703229C096A008AED33 /* ZTRTableViewCell.m */; };
+		65561706229C0E46008AED33 /* news.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65561705229C0E46008AED33 /* news.plist */; };
+		65561715229C0E6B008AED33 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561708229C0E6B008AED33 /* 1.jpeg */; };
+		65561716229C0E6B008AED33 /* 50.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561709229C0E6B008AED33 /* 50.jpeg */; };
+		65561717229C0E6B008AED33 /* 1516159990.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6556170A229C0E6B008AED33 /* 1516159990.jpeg */; };
+		65561718229C0E6B008AED33 /* 238221586.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6556170B229C0E6B008AED33 /* 238221586.jpeg */; };
+		65561719229C0E6B008AED33 /* 424324.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6556170C229C0E6B008AED33 /* 424324.jpeg */; };
+		6556171A229C0E6B008AED33 /* 7735164184.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6556170D229C0E6B008AED33 /* 7735164184.jpeg */; };
+		6556171B229C0E6B008AED33 /* 4934348604.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6556170F229C0E6B008AED33 /* 4934348604.jpeg */; };
+		6556171C229C0E6B008AED33 /* 926680527.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561710229C0E6B008AED33 /* 926680527.jpeg */; };
+		6556171D229C0E6B008AED33 /* 3461756566.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561711229C0E6B008AED33 /* 3461756566.jpeg */; };
+		6556171E229C0E6B008AED33 /* 603564546.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561712229C0E6B008AED33 /* 603564546.jpeg */; };
+		6556171F229C0E6B008AED33 /* 6289891986.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65561713229C0E6B008AED33 /* 6289891986.jpeg */; };
+		65561720229C0E6B008AED33 /* vip.png in Resources */ = {isa = PBXBuildFile; fileRef = 65561714229C0E6B008AED33 /* vip.png */; };
 		65D478EF2297E87600020061 /* adView.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D478EE2297E87600020061 /* adView.png */; };
 		65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484E02297DEDC00145DE2 /* AppDelegate.m */; };
 		65F484E92297DEDE00145DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F484E82297DEDE00145DE2 /* Assets.xcassets */; };
@@ -33,10 +48,27 @@
 		655616ED229ABC6E008AED33 /* ZTRTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTRTabBar.m; sourceTree = "<group>"; };
 		655616EF229AC0CC008AED33 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARViewController.h; path = "知己/Root/TabBar/ARViewController.h"; sourceTree = SOURCE_ROOT; };
 		655616F0229AC0CC008AED33 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARViewController.m; path = "知己/Root/TabBar/ARViewController.m"; sourceTree = SOURCE_ROOT; };
-		655616F5229AC10D008AED33 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = "知己/Root/TabBar/CardViewController.h"; sourceTree = SOURCE_ROOT; };
-		655616F6229AC10D008AED33 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = "知己/Root/TabBar/CardViewController.m"; sourceTree = SOURCE_ROOT; };
+		655616F5229AC10D008AED33 /* CardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = "知己/Root/Card/Controller/CardViewController.h"; sourceTree = SOURCE_ROOT; };
+		655616F6229AC10D008AED33 /* CardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = "知己/Root/Card/Controller/CardViewController.m"; sourceTree = SOURCE_ROOT; };
 		655616F9229ACE61008AED33 /* ADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
 		655616FA229ACE61008AED33 /* ADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
+		655616FE229C0792008AED33 /* NewsCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCard.h; sourceTree = "<group>"; };
+		655616FF229C0792008AED33 /* NewsCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCard.m; sourceTree = "<group>"; };
+		65561702229C096A008AED33 /* ZTRTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTRTableViewCell.h; sourceTree = "<group>"; };
+		65561703229C096A008AED33 /* ZTRTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTRTableViewCell.m; sourceTree = "<group>"; };
+		65561705229C0E46008AED33 /* news.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = news.plist; sourceTree = "<group>"; };
+		65561708229C0E6B008AED33 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		65561709229C0E6B008AED33 /* 50.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpeg; sourceTree = "<group>"; };
+		6556170A229C0E6B008AED33 /* 1516159990.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1516159990.jpeg; sourceTree = "<group>"; };
+		6556170B229C0E6B008AED33 /* 238221586.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 238221586.jpeg; sourceTree = "<group>"; };
+		6556170C229C0E6B008AED33 /* 424324.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 424324.jpeg; sourceTree = "<group>"; };
+		6556170D229C0E6B008AED33 /* 7735164184.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7735164184.jpeg; sourceTree = "<group>"; };
+		6556170F229C0E6B008AED33 /* 4934348604.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4934348604.jpeg; sourceTree = "<group>"; };
+		65561710229C0E6B008AED33 /* 926680527.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 926680527.jpeg; sourceTree = "<group>"; };
+		65561711229C0E6B008AED33 /* 3461756566.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3461756566.jpeg; sourceTree = "<group>"; };
+		65561712229C0E6B008AED33 /* 603564546.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 603564546.jpeg; sourceTree = "<group>"; };
+		65561713229C0E6B008AED33 /* 6289891986.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6289891986.jpeg; sourceTree = "<group>"; };
+		65561714229C0E6B008AED33 /* vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vip.png; sourceTree = "<group>"; };
 		65D478EE2297E87600020061 /* adView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adView.png; sourceTree = "<group>"; };
 		65F484DC2297DEDC00145DE2 /* 知己.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "知己.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F484DF2297DEDC00145DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +124,58 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		655616FC229C075D008AED33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				655616F5229AC10D008AED33 /* CardViewController.h */,
+				655616F6229AC10D008AED33 /* CardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		655616FD229C076E008AED33 /* CellModel */ = {
+			isa = PBXGroup;
+			children = (
+				655616FE229C0792008AED33 /* NewsCard.h */,
+				655616FF229C0792008AED33 /* NewsCard.m */,
+			);
+			path = CellModel;
+			sourceTree = "<group>";
+		};
+		65561701229C0949008AED33 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				65561702229C096A008AED33 /* ZTRTableViewCell.h */,
+				65561703229C096A008AED33 /* ZTRTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		65561707229C0E6B008AED33 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				65561708229C0E6B008AED33 /* 1.jpeg */,
+				65561709229C0E6B008AED33 /* 50.jpeg */,
+				6556170A229C0E6B008AED33 /* 1516159990.jpeg */,
+				6556170B229C0E6B008AED33 /* 238221586.jpeg */,
+				6556170C229C0E6B008AED33 /* 424324.jpeg */,
+				6556170D229C0E6B008AED33 /* 7735164184.jpeg */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		6556170E229C0E6B008AED33 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6556170F229C0E6B008AED33 /* 4934348604.jpeg */,
+				65561710229C0E6B008AED33 /* 926680527.jpeg */,
+				65561711229C0E6B008AED33 /* 3461756566.jpeg */,
+				65561712229C0E6B008AED33 /* 603564546.jpeg */,
+				65561713229C0E6B008AED33 /* 6289891986.jpeg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		65778F3D2297F75F004AAB32 /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +211,9 @@
 		65778F402297F791004AAB32 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				655616F5229AC10D008AED33 /* CardViewController.h */,
-				655616F6229AC10D008AED33 /* CardViewController.m */,
+				65561701229C0949008AED33 /* Cell */,
+				655616FD229C076E008AED33 /* CellModel */,
+				655616FC229C075D008AED33 /* Controller */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -168,6 +253,7 @@
 				65F484F52297DEF000145DE2 /* AppDelegate */,
 				65F484F62297DF2600145DE2 /* Other */,
 				65F484E82297DEDE00145DE2 /* Assets.xcassets */,
+				65561714229C0E6B008AED33 /* vip.png */,
 				65F484ED2297DEDE00145DE2 /* Info.plist */,
 				65F484EA2297DEDE00145DE2 /* LaunchScreen.storyboard */,
 			);
@@ -186,6 +272,8 @@
 		65F484F62297DF2600145DE2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				65561707229C0E6B008AED33 /* icon */,
+				6556170E229C0E6B008AED33 /* image */,
 				65D478EE2297E87600020061 /* adView.png */,
 				65F484EE2297DEDE00145DE2 /* main.m */,
 			);
@@ -220,6 +308,7 @@
 		92B2CD5A22996CCF0049CECF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65561705229C0E46008AED33 /* news.plist */,
 				92B2CD5D229974740049CECF /* story.json */,
 			);
 			path = Model;
@@ -291,9 +380,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6556171B229C0E6B008AED33 /* 4934348604.jpeg in Resources */,
+				65561720229C0E6B008AED33 /* vip.png in Resources */,
+				65561716229C0E6B008AED33 /* 50.jpeg in Resources */,
+				65561718229C0E6B008AED33 /* 238221586.jpeg in Resources */,
+				6556171A229C0E6B008AED33 /* 7735164184.jpeg in Resources */,
+				65561717229C0E6B008AED33 /* 1516159990.jpeg in Resources */,
+				6556171F229C0E6B008AED33 /* 6289891986.jpeg in Resources */,
 				65D478EF2297E87600020061 /* adView.png in Resources */,
+				6556171E229C0E6B008AED33 /* 603564546.jpeg in Resources */,
+				65561719229C0E6B008AED33 /* 424324.jpeg in Resources */,
+				65561715229C0E6B008AED33 /* 1.jpeg in Resources */,
 				65F484EC2297DEDE00145DE2 /* LaunchScreen.storyboard in Resources */,
+				65561706229C0E46008AED33 /* news.plist in Resources */,
+				6556171C229C0E6B008AED33 /* 926680527.jpeg in Resources */,
 				65F484E92297DEDE00145DE2 /* Assets.xcassets in Resources */,
+				6556171D229C0E6B008AED33 /* 3461756566.jpeg in Resources */,
 				92B2CD5E229974740049CECF /* story.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,12 +434,14 @@
 			files = (
 				65F484FD2297E32B00145DE2 /* ZTRViewController.m in Sources */,
 				655616FB229ACE61008AED33 /* ADViewController.m in Sources */,
+				65561704229C096A008AED33 /* ZTRTableViewCell.m in Sources */,
 				65F484EF2297DEDE00145DE2 /* main.m in Sources */,
 				92B2CD6E229A8E6A0049CECF /* todayStoryView.m in Sources */,
 				92B2CD71229A8E800049CECF /* formerStoryView.m in Sources */,
 				655616F7229AC10D008AED33 /* CardViewController.m in Sources */,
 				92B2CD65229A2E620049CECF /* MineViewController.m in Sources */,
 				65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */,
+				65561700229C0792008AED33 /* NewsCard.m in Sources */,
 				92B2CD68229A2F350049CECF /* AIViewController.m in Sources */,
 				655616EE229ABC6E008AED33 /* ZTRTabBar.m in Sources */,
 				92B2CD61229977880049CECF /* MainViewController.m in Sources */,
