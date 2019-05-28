@@ -10,6 +10,7 @@
 #import "ZTRTableViewCell.h"
 #import "NewsCard.h"
 #import "MJExtension.h"
+#import "JUMPViewController.h"
 @interface CardViewController ()
 
 @property(nonatomic,strong)NSArray *array;
@@ -36,7 +37,7 @@ NSString *ID = @"newID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.tableView.separatorStyle = NO;
 }
 
 #pragma mark - lazyloading
@@ -87,5 +88,11 @@ NSString *ID = @"newID";
     }else {
         return CGRectGetMaxY(textframe)+space;
     }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    JUMPViewController *jump = [[JUMPViewController alloc]init];
+    [jump setCard:self.array[indexPath.row]];
+    [self presentViewController:jump animated:YES completion:nil];
 }
 @end

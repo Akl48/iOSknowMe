@@ -1,8 +1,8 @@
 //
-//  ZTRTableViewCell.h
+//  MessageView.h
 //  知己
 //
-//  Created by 周天荣 on 2019/5/27.
+//  Created by 周天荣 on 2019/5/28.
 //  Copyright © 2019 周天荣. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @class NewsCard;
-@interface ZTRTableViewCell : UITableViewCell
+@interface MessageView : UIView
 
 @property(nonatomic,strong)NewsCard *card;
 
