@@ -28,7 +28,7 @@ NSString *ID = @"newID";
         self.tabBarItem.image = [[UIImage imageNamed:@"知识"] imageWithRenderingMode:UIImageRenderingModeAutomatic];
         [self.tableView registerClass:[ZTRTableViewCell class] forCellReuseIdentifier:ID];
         
-        self.tableView.rowHeight = 150;
+//        self.tableView.rowHeight = 150;
     }
     return self;
 }
@@ -60,5 +60,32 @@ NSString *ID = @"newID";
     ZTRTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     cell.card = self.array[indexPath.row];
     return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NewsCard *card = self.array[indexPath.row];
+    CGFloat space = 10;
+    
+    CGFloat iconX = space;
+    CGFloat iconY = space;
+    CGFloat iconWH = 40;
+    CGRect iconFrame = CGRectMake(iconX, iconY, iconWH, iconWH);
+        
+    CGFloat textX = iconX;
+    CGFloat textY = CGRectGetMaxY(iconFrame) + space;
+    CGFloat textW = self.view.bounds.size.width - 2 * space;
+    CGSize maxSize = CGSizeMake(textW, 100000);
+    //    CGSize textSize = [self.card.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:maxSize];
+    NSDictionary *textAttr = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+    CGFloat textH = [card.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:textAttr context:nil].size.height;
+    CGRect textframe = CGRectMake(textX, textY, textW, textH);
+    if(card.picture){
+        CGFloat pictureX = iconX;
+        CGFloat pictureY = CGRectGetMaxY(textframe) + space;
+        CGFloat pictureWH = 100;
+        CGRect pictureFrame = CGRectMake(pictureX, pictureY, pictureWH, pictureWH);
+        return CGRectGetMaxY(pictureFrame)+space;
+    }else {
+        return CGRectGetMaxY(textframe)+space;
+    }
 }
 @end

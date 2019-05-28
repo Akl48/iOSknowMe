@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,copy)NSString *icon;
 
-@property(nonatomic,assign,getter=isVip)BOOL VIP;
+@property(nonatomic,assign,getter=isVip)BOOL vip;
 
 @property(nonatomic,copy)NSString *picture;
 
