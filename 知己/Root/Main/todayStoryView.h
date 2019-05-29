@@ -12,9 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface todayStoryView : UIView
 
-@property (nonatomic,strong) UILabel *title;
-@property (nonatomic,strong) UILabel *intro;
+@property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UILabel *introLabel;
 @property (nonatomic,strong) UIImageView *imageView;
+@property (nonatomic,copy) NSString *titleStr;
+@property (nonatomic,copy) NSString *dateStr;
+@property (nonatomic,copy) NSString *contentStr;
 
 - (instancetype)initWithValue:(NSString*)title :(NSString*)intro :(UIImage *)image;
 

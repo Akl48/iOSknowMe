@@ -7,8 +7,10 @@
 //
 
 #import "MainViewController.h"
-#import "todayStoryView.h"
-#import "formerStoryView.h"
+#import "Main/todayStoryView.h"
+#import "Main/formerStoryView.h"
+#import "Me/UserDetails.h"
+#import "Main/completeStory.h"
 
 @interface MainViewController ()<UIScrollViewDelegate>
 
@@ -33,6 +35,10 @@
     [self loadFormerScrollView:stories];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)loadTimeLabel {
     self.timeLabel = [[UILabel alloc] init];
@@ -52,7 +58,7 @@
     self.todayLabel.font = [UIFont systemFontOfSize:30];
     self.todayLabel.textColor = [UIColor blackColor];
     self.todayLabel.textAlignment = NSTextAlignmentLeft;
-    self.todayLabel.frame = CGRectMake(20, 55, (SCREEN_WIDTH/3)*2, 30);
+    self.todayLabel.frame = CGRectMake(20, 60, (SCREEN_WIDTH/3)*2, 30);
     self.todayLabel.text = @"今日趣闻";
     [self.view addSubview:self.todayLabel];
 }
@@ -70,27 +76,31 @@
 }
 
 - (void)jumpToUserDetail {
-    
+    UserDetails *user = [[UserDetails alloc]init];
+    [self presentViewController:user animated:YES completion:nil];
 }
 
 - (void)loadTodayScrollView:(NSDictionary *)stories {
     self.todayScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 90, SCREEN_WIDTH, 250)];
-    //self.todayScrollView.backgroundColor = [UIColor grayColor];
     self.todayScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*4/5*3+40, 250);
     self.todayScrollView.userInteractionEnabled = YES;
     self.todayScrollView.showsHorizontalScrollIndicator = NO;
     
+    NSArray *dates  = [stories valueForKey:@"date"];
     NSArray *titles = [stories valueForKey:@"title"];
     NSArray *intros = [stories valueForKey:@"intro"];
+    NSArray *contents = [stories valueForKey:@"content"];
     for (int i=0; i<titles.count; i++) {
         todayStoryView *story = [[todayStoryView alloc]initWithValue:titles[i] :intros[i] :[UIImage imageNamed:@"storyImage"]];
         story.frame = CGRectMake(10+i*(SCREEN_WIDTH*4/5+10), 10, SCREEN_WIDTH*4/5, 240);
+        story.titleStr = titles[i];
+        story.dateStr = dates[i];
+        story.contentStr = contents[i];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(jumpToCompleteStory:)];
+        [story addGestureRecognizer:tap];
         [self.todayScrollView addSubview:story];
     }
-    
-    
-    
-    
+
     [self.view addSubview:self.todayScrollView];
 }
 
@@ -99,7 +109,7 @@
     self.formerLabel.font = [UIFont systemFontOfSize:20];
     self.formerLabel.textColor = [UIColor blackColor];
     self.formerLabel.textAlignment = NSTextAlignmentLeft;
-    self.formerLabel.frame = CGRectMake(20, 350, (SCREEN_WIDTH/3)*2, 30);
+    self.formerLabel.frame = CGRectMake(20, 355, (SCREEN_WIDTH/3)*2, 30);
     self.formerLabel.text = @"往日精彩";
     [self.view addSubview:self.formerLabel];
 }
@@ -124,6 +134,16 @@
     [self.view addSubview:self.formerScrollView];
 }
 
+- (void)jumpToCompleteStory:(id)sender {
+    
+    UITapGestureRecognizer *tap = sender;
+    todayStoryView *story = (todayStoryView *)tap.view;
+    NSArray *values = [[NSArray alloc]initWithObjects:story.titleStr,story.dateStr,story.contentStr, nil];
+    NSLog(@"%@",values);
+    completeStory *cs = [[completeStory alloc]initWithValues:values];
+    [self.navigationController pushViewController:cs animated:YES];
+
+}
 
 
 @end

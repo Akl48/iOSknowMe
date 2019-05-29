@@ -8,9 +8,9 @@
 
 #import "ZTRViewController.h"
 #import "TabBar/ZTRTabBar.h"
-#import "Main/MainViewController.h"
+#import "MainViewController.h"
 #import "AI/AIViewController.h"
-#import "Me/MineViewController.h"
+#import "MineViewController.h"
 #import "ARViewController.h"
 #import "CardViewController.h"
 

@@ -15,20 +15,20 @@
 - (instancetype)initWithValue:(NSString *)title :(NSString *)intro :(UIImage *)image {
     self = [super init];
     self.backgroundColor = RandomColor;
-    self.title = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH*4/5-10, 30)];
-    self.title.font = [UIFont systemFontOfSize:25];
-    self.title.text = title;
-    self.title.textColor = [UIColor whiteColor];
-    self.title.textAlignment = NSTextAlignmentRight;
-    [self addSubview:self.title];
+    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH*4/5-10, 30)];
+    self.titleLabel.font = [UIFont systemFontOfSize:25];
+    self.titleLabel.text = title;
+    self.titleLabel.textColor = [UIColor whiteColor];
+    self.titleLabel.textAlignment = NSTextAlignmentRight;
+    [self addSubview:self.titleLabel];
     
-    self.intro = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*4/10, 40, SCREEN_WIDTH*4/10-10, 60)];
-    self.intro.font = [UIFont systemFontOfSize:15];
-    self.intro.numberOfLines = 0;
-    self.intro.text = [NSString stringWithFormat:@"「 %@ 」",intro];
-    self.intro.textColor = [UIColor whiteColor];
-    self.intro.textAlignment = NSTextAlignmentLeft;
-    [self addSubview:self.intro];
+    self.introLabel = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH*4/10, 40, SCREEN_WIDTH*4/10-10, 60)];
+    self.introLabel.font = [UIFont systemFontOfSize:15];
+    self.introLabel.numberOfLines = 0;
+    self.introLabel.text = [NSString stringWithFormat:@"「 %@ 」",intro];
+    self.introLabel.textColor = [UIColor whiteColor];
+    self.introLabel.textAlignment = NSTextAlignmentLeft;
+    [self addSubview:self.introLabel];
     
     self.imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 90, 150, 150)];
     [self.imageView setImage:image];

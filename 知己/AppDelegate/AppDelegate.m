@@ -24,7 +24,8 @@
     ADViewController *ad = [[ADViewController alloc]init];
     self.window.rootViewController = ad;
     ad.skipButtonClickBlock = ^{
-        self.window.rootViewController = tabBarController;
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tabBarController];
+        self.window.rootViewController = nav;
     };
     [self.window makeKeyAndVisible];
     

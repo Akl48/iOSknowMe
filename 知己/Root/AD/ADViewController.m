@@ -68,6 +68,7 @@
 #pragma mark -点击跳过
 - (void)countButtonClick {
     if (self.skipButtonClickBlock) {
+        [self invalidatedTimer];
         self.skipButtonClickBlock();
     }
 }
