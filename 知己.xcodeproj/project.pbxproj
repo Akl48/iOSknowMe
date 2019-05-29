@@ -170,6 +170,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		6556172C229D6235008AED33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		65778F3D2297F75F004AAB32 /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +189,7 @@
 		65778F3E2297F76E004AAB32 /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				6556172C229D6235008AED33 /* View */,
 				655616EF229AC0CC008AED33 /* ARViewController.h */,
 				655616F0229AC0CC008AED33 /* ARViewController.m */,
 			);

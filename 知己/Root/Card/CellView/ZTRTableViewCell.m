@@ -95,7 +95,6 @@
         CGFloat pictureY = CGRectGetMaxY(self.text_label.frame) + space;
         CGFloat pictureWH = 100;
         self.picture_imageView.frame = CGRectMake(pictureX, pictureY, pictureWH, pictureWH);
-        
     }
 }
 

@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,copy)NSString *picture;
 
+@property(nonatomic,assign)CGFloat cellH;
+
 @end
 
 NS_ASSUME_NONNULL_END
