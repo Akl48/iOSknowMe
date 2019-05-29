@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56693E01628DD4278B6BCED0 /* libPods-知己.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFD2E62157D339416B2ECF4 /* libPods-知己.a */; };
+		650B24F6229EBED00028DA23 /* ZTRSceneKitScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 650B24F5229EBED00028DA23 /* ZTRSceneKitScene.scn */; };
 		655616EE229ABC6E008AED33 /* ZTRTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616ED229ABC6E008AED33 /* ZTRTabBar.m */; };
 		655616F1229AC0CC008AED33 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F0229AC0CC008AED33 /* ARViewController.m */; };
 		655616F7229AC10D008AED33 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655616F6229AC10D008AED33 /* CardViewController.m */; };
@@ -19,6 +20,7 @@
 		65561724229D0D5F008AED33 /* JUMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65561723229D0D5F008AED33 /* JUMPViewController.m */; };
 		65561728229D27A1008AED33 /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65561727229D27A1008AED33 /* MessageView.m */; };
 		6556172B229D5CF4008AED33 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 6556172A229D5CF4008AED33 /* share.png */; };
+		65AF08A1229E6CA400BC17DF /* arController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AF08A0229E6CA400BC17DF /* arController.m */; };
 		65D478EF2297E87600020061 /* adView.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D478EE2297E87600020061 /* adView.png */; };
 		65F484E12297DEDC00145DE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F484E02297DEDC00145DE2 /* AppDelegate.m */; };
 		65F484E92297DEDE00145DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F484E82297DEDE00145DE2 /* Assets.xcassets */; };
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		40A13CE6950B0E688D986E41 /* Pods-知己.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-知己.release.xcconfig"; path = "Target Support Files/Pods-知己/Pods-知己.release.xcconfig"; sourceTree = "<group>"; };
 		4EABF221F9E9BABCD1D45790 /* Pods-知己.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-知己.debug.xcconfig"; path = "Target Support Files/Pods-知己/Pods-知己.debug.xcconfig"; sourceTree = "<group>"; };
+		650B24F5229EBED00028DA23 /* ZTRSceneKitScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ZTRSceneKitScene.scn; sourceTree = "<group>"; };
 		655616EC229ABC6E008AED33 /* ZTRTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTRTabBar.h; sourceTree = "<group>"; };
 		655616ED229ABC6E008AED33 /* ZTRTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTRTabBar.m; sourceTree = "<group>"; };
 		655616EF229AC0CC008AED33 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARViewController.h; path = "知己/Root/TabBar/ARViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -57,6 +60,8 @@
 		65561726229D27A1008AED33 /* MessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
 		65561727229D27A1008AED33 /* MessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
 		6556172A229D5CF4008AED33 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		65AF089F229E6CA400BC17DF /* arController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arController.h; sourceTree = "<group>"; };
+		65AF08A0229E6CA400BC17DF /* arController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arController.m; sourceTree = "<group>"; };
 		65D478EE2297E87600020061 /* adView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adView.png; sourceTree = "<group>"; };
 		65F484DC2297DEDC00145DE2 /* 知己.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "知己.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F484DF2297DEDC00145DE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -173,6 +178,9 @@
 		6556172C229D6235008AED33 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65AF089F229E6CA400BC17DF /* arController.h */,
+				65AF08A0229E6CA400BC17DF /* arController.m */,
+				650B24F5229EBED00028DA23 /* ZTRSceneKitScene.scn */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +396,7 @@
 			files = (
 				65561720229C0E6B008AED33 /* vip.png in Resources */,
 				65D478EF2297E87600020061 /* adView.png in Resources */,
+				650B24F6229EBED00028DA23 /* ZTRSceneKitScene.scn in Resources */,
 				65F484EC2297DEDE00145DE2 /* LaunchScreen.storyboard in Resources */,
 				6556172B229D5CF4008AED33 /* share.png in Resources */,
 				65561706229C0E46008AED33 /* news.plist in Resources */,
@@ -444,6 +453,7 @@
 				65561724229D0D5F008AED33 /* JUMPViewController.m in Sources */,
 				92B2CD68229A2F350049CECF /* AIViewController.m in Sources */,
 				655616EE229ABC6E008AED33 /* ZTRTabBar.m in Sources */,
+				65AF08A1229E6CA400BC17DF /* arController.m in Sources */,
 				92B2CD61229977880049CECF /* MainViewController.m in Sources */,
 				655616F1229AC0CC008AED33 /* ARViewController.m in Sources */,
 			);
@@ -581,13 +591,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5FXX6G3M6W;
+				DEVELOPMENT_TEAM = LBLB6U5266;
 				INFOPLIST_FILE = "知己/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.knowme.anthony;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.knowme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
@@ -600,13 +610,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5FXX6G3M6W;
+				DEVELOPMENT_TEAM = LBLB6U5266;
 				INFOPLIST_FILE = "知己/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ios.knowme.anthony;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.knowme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";

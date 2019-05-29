@@ -52,9 +52,7 @@
 
 - (void)callForAI{
     ARViewController *ar = [[ARViewController alloc]init];
-    [UIView animateWithDuration:2.0 animations:^{
-        [self presentViewController:ar animated:YES completion:nil];
-    }];
+    [self presentViewController:ar animated:YES completion:nil];
 }
 
 @end
