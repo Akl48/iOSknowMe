@@ -36,6 +36,7 @@
     btn2.center = CGPointMake(self.view.bounds.size.width*0.5, self.view.bounds.size.height*0.5 + 150);
     btn2.layer.cornerRadius = 100;
     [btn2 setTitle:@"小方块" forState:UIControlStateNormal];
+    NSLog(@"hello");
     [btn2 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
 }
